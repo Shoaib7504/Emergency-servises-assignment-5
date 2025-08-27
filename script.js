@@ -195,3 +195,32 @@ document.getElementById("button9").addEventListener('click',function name(e) {
 })
 
 
+// History-section
+
+
+document.getElementById("button1").addEventListener("click",function(){
+    const transactionContainer = document.getElementById("transaction-container")
+    transactionContainer.innerText = ""
+
+    for(const data of callinghistory){
+        const div = document.createElement("div")
+        div.innerHTML=`
+        <div class="flex justify-between items-center mt-3 p-2 rounded-md h-[70px] bg-gray-100">
+              <div class="flex items-center">
+                  <div>
+                    <h1>${data.name}</h1>
+                    <p>${data.number}</p>
+                    
+                  </div>
+                  <div class="ml-3">
+                    
+                    <p>${data.Date}</p>
+                  </div>
+              
+        `
+
+        transactionContainer.appendChild(div)
+
+
+    }
+})
