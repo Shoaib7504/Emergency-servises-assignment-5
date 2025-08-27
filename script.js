@@ -206,7 +206,7 @@ document.getElementById("button1").addEventListener("click",function(){
         const div = document.createElement("div")
         div.innerHTML=`
         <div class="flex justify-between items-center mt-3 p-2 rounded-md h-[70px] bg-gray-100">
-              <div class="flex items-center">
+              <div class="flex items-center ">
                   <div>
                     <h1>${data.name}</h1>
                     <p>${data.number}</p>
@@ -224,3 +224,15 @@ document.getElementById("button1").addEventListener("click",function(){
 
     }
 })
+// Challenges-section
+
+const copyButton = document.getElementsByClassName("copybtn");
+for (let i = 0; i < copyButton.length; i++) {
+  copyButton[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    const copys = parseInt(document.getElementById("copy-time").innerText);
+    const copyincreses = copys+ 1;
+    document.getElementById("copy-time").innerText =copyincreses;
+  });
+  
+}
