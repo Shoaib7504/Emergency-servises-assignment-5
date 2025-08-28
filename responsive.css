@@ -1,0 +1,24 @@
+@media only screen and (max-width: 640px) {
+  body{
+    width: 450px;
+  }
+    .nav {
+    width:450px;
+  }
+  .hero{
+    height: 500px;
+    
+    width:450px;
+    padding-left: 30px;
+  }
+  .main-container{
+    width:450px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .card-section {
+    
+     display: grid;
+    grid-template-columns: repeat(1,1fr)
+  }
+}
